@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: romulo-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RomuloMPereira/config-files-microservices-fundamentals
+          #username: username
+          #password: password
+          search-paths:
+          - 'greeting-service*'
